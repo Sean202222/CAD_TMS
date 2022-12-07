@@ -1,5 +1,6 @@
 class EmployeesController < ApplicationController
   before_action :set_employee, only: %i[ show edit update destroy ]
+  before_action :authenticate_user! # Before you do any action, you must be an authenticated user
 
   # GET /employees or /employees.json
   def index

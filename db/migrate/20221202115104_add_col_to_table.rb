@@ -8,3 +8,4 @@ class AddColToTable < ActiveRecord::Migration[7.0]
     add_column :trainers, :istrainer, :boolean, default: true
   end
 end
+# This is new text

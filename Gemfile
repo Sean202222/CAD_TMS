@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "devise", "~> 4.8"
+
+gem "httparty", "~> 0.20.0"

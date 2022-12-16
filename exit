@@ -1,0 +1,36 @@
+[33mcommit 97fc84d487b9c716c25a1a868106a43d3fd516e7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 5ef4a14 7b6b3c0
+Author: Sean202222 <seanjohn.mc20@gmail.com>
+Date:   Thu Dec 8 16:01:37 2022 +0000
+
+    Merge branch 'spare' api working
+
+[33mcommit 7b6b3c03be003cb96c8fe8bbd2082eff38907dad[m[33m ([m[1;31morigin/spare[m[33m, [m[1;32mspare[m[33m)[m
+Author: Sean202222 <seanjohn.mc20@gmail.com>
+Date:   Thu Dec 8 16:00:27 2022 +0000
+
+    api working
+
+[33mcommit 5ef4a1481e09c3dd7c5a87b26b812d3c7de8f3c0[m
+Author: Sean202222 <seanjohn.mc20@gmail.com>
+Date:   Thu Dec 8 14:51:13 2022 +0000
+
+    sample push
+
+[33mcommit 903a7b295d58659b21ce91045dd5a71d420e8fe7[m[33m ([m[1;31morigin/dummy[m[33m, [m[1;32mdummy[m[33m)[m
+Author: Sean202222 <seanjohn.mc20@gmail.com>
+Date:   Wed Dec 7 15:23:46 2022 +0000
+
+    extended
+
+[33mcommit c3c2ff7d4706e4d6b03c961e232c97a464b07f13[m
+Author: Sean202222 <seanjohn.mc20@gmail.com>
+Date:   Wed Dec 7 10:45:47 2022 +0000
+
+    user
+
+[33mcommit 2a30647ca7c94b2731efd4168a8552c2430720a7[m
+Author: Sean202222 <seanjohn.mc20@gmail.com>
+Date:   Fri Dec 2 12:01:17 2022 +0000
+
+    devisesetup employee and trainer setup

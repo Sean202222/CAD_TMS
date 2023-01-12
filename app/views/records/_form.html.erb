@@ -12,16 +12,6 @@
   <% end %>
 
   <div>
-    <%= form.label :trainerid, style: "display: block" %>
-    <%= form.number_field :trainerid %>
-  </div>
-
-  <div>
-    <%= form.label :employeeid, style: "display: block" %>
-    <%= form.number_field :employeeid %>
-  </div>
-
-  <div>
     <%= form.label :employee_status, style: "display: block" %>
     <%= form.text_field :employee_status %>
   </div>
@@ -44,6 +34,16 @@
   <div>
     <%= form.label :renewal_date, style: "display: block" %>
     <%= form.date_field :renewal_date %>
+  </div>
+
+  <div>
+    <%= form.label :trainer_id, style: "display: block" %>
+    <%= form.text_field :trainer_id %>
+  </div>
+
+  <div>
+    <%= form.label :employee_id, style: "display: block" %>
+    <%= form.text_field :employee_id %>
   </div>
 
   <div>

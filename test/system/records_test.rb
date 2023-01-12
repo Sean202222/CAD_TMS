@@ -14,13 +14,13 @@ class RecordsTest < ApplicationSystemTestCase
     visit records_url
     click_on "New record"
 
+    fill_in "Employee", with: @record.employee_id
     fill_in "Employee status", with: @record.employee_status
-    fill_in "Employeeid", with: @record.employeeid
     fill_in "End date", with: @record.end_date
     fill_in "Prog title", with: @record.prog_title
     fill_in "Renewal date", with: @record.renewal_date
     fill_in "Start date", with: @record.start_date
-    fill_in "Trainerid", with: @record.trainerid
+    fill_in "Trainer", with: @record.trainer_id
     click_on "Create Record"
 
     assert_text "Record was successfully created"
@@ -31,13 +31,13 @@ class RecordsTest < ApplicationSystemTestCase
     visit record_url(@record)
     click_on "Edit this record", match: :first
 
+    fill_in "Employee", with: @record.employee_id
     fill_in "Employee status", with: @record.employee_status
-    fill_in "Employeeid", with: @record.employeeid
     fill_in "End date", with: @record.end_date
     fill_in "Prog title", with: @record.prog_title
     fill_in "Renewal date", with: @record.renewal_date
     fill_in "Start date", with: @record.start_date
-    fill_in "Trainerid", with: @record.trainerid
+    fill_in "Trainer", with: @record.trainer_id
     click_on "Update Record"
 
     assert_text "Record was successfully updated"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_12_160639) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_12_163947) do
   create_table "employees", force: :cascade do |t|
     t.string "email"
     t.integer "phone"
@@ -26,15 +26,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_12_160639) do
   end
 
   create_table "records", force: :cascade do |t|
-    t.integer "trainerid"
-    t.integer "employeeid"
     t.string "employee_status"
     t.string "prog_title"
     t.date "start_date"
     t.date "end_date"
     t.date "renewal_date"
+    t.integer "trainer_id", null: false
+    t.integer "employee_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["employee_id"], name: "index_records_on_employee_id"
+    t.index ["trainer_id"], name: "index_records_on_trainer_id"
   end
 
   create_table "trainers", force: :cascade do |t|
@@ -76,4 +78,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_12_160639) do
     t.index ["reset_password_token"], name: "index_views_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "records", "employees"
+  add_foreign_key "records", "trainers"
 end

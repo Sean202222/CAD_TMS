@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :records
   root to: 'pages#home'
   resources :trainers
   resources :employees

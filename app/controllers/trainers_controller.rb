@@ -1,6 +1,6 @@
 class TrainersController < ApplicationController
   before_action :set_trainer, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!
+  before_action :authenticate_user! # This sets different user roles
 
   # GET /trainers or /trainers.json
   def index

@@ -17,7 +17,7 @@ class RecordsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create record" do
     assert_difference("Record.count") do
-      post records_url, params: { record: { employee_status: @record.employee_status, employeeid: @record.employeeid, end_date: @record.end_date, prog_title: @record.prog_title, renewal_date: @record.renewal_date, start_date: @record.start_date, trainerid: @record.trainerid } }
+      post records_url, params: { record: { employee_id: @record.employee_id, employee_status: @record.employee_status, end_date: @record.end_date, prog_title: @record.prog_title, renewal_date: @record.renewal_date, start_date: @record.start_date, trainer_id: @record.trainer_id } }
     end
 
     assert_redirected_to record_url(Record.last)
@@ -34,7 +34,7 @@ class RecordsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update record" do
-    patch record_url(@record), params: { record: { employee_status: @record.employee_status, employeeid: @record.employeeid, end_date: @record.end_date, prog_title: @record.prog_title, renewal_date: @record.renewal_date, start_date: @record.start_date, trainerid: @record.trainerid } }
+    patch record_url(@record), params: { record: { employee_id: @record.employee_id, employee_status: @record.employee_status, end_date: @record.end_date, prog_title: @record.prog_title, renewal_date: @record.renewal_date, start_date: @record.start_date, trainer_id: @record.trainer_id } }
     assert_redirected_to record_url(@record)
   end
 

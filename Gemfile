@@ -75,4 +75,6 @@ gem "devise", "~> 4.8"
 
 gem "httparty", "~> 0.20.0"
 
-gem 'filter'
+gem "filter"
+
+gem 'bootstrap', '~> 5.2', '>= 5.2.3'

@@ -2,9 +2,14 @@ class EmployeesController < ApplicationController
   before_action :set_employee, only: %i[ show edit update destroy ]
   before_action :authenticate_user! # Before you do any action, you must be an authenticated user
 
+  # Needed to include the custom gem
+  # I managed to implement the custom gem, but it wouldn't work in the running application 
+  require 'filter'
+
   # GET /employees or /employees.json
   def index
     @employees = Employee.all
+    # Filter.runcheck("The hell does filter mean")
   end
 
   # GET /employees/1 or /employees/1.json

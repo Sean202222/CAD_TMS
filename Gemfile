@@ -70,11 +70,11 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
+# Set up authentication in a ruby on rails project
 gem "devise", "~> 4.8"
-
+# Use data from external api data sources in project
 gem "httparty", "~> 0.20.0"
-
+# Custom gem for blocking out inappropriate language
 gem "filter"
 
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
